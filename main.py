@@ -47,9 +47,7 @@ async def dexi(ctx):
 async def memscatsanddogs(ctx):
     img_name = random.choice(os.listdir('img'))
     with open(f'img/{img_name}', 'rb') as f:
-        # В переменную кладем файл, который преобразуется в файл библиотеки Discord!
         picture = discord.File(f)
-   # Можем передавать файл как параметр!
     await ctx.send(file=picture)
 
-bot.run('MTI4MTk3MDg2NzQyNDg1ODIwMw.Gf6ZqW.dFXGX5AE5q1mSxLw_S_lsI3PHgbH39xQOlG0GA')
+bot.run('KEY!')
